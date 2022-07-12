@@ -30,8 +30,9 @@
 
 <body>
     <!-- Principal conteneur -->
-    <div class="page-container">
-        <header>
+    <header>
+        <div class="page-container">
+
             <!-- bloc-0 -->
             <div class="bloc bgc-white l-bloc " id="bloc-0">
                 <div class="container bloc-sm">
@@ -57,111 +58,123 @@
                     </nav>
                 </div>
             </div>
-        </header>
-        <!-- bloc-0 END -->
-        <main>
-            <!-- bloc-6 -->
-            <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center hero-bloc-text tc-white">
-                                Parlons web design !
-                            </h1>
-                            <p class="text-center mg-lg tc-white tight-width-whitespace">
-                                Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-                            </p>
-                        </div>
+        </div>
+    </header>
+    <!-- bloc-0 END -->
+    <main>
+        <!-- bloc-6 -->
+        <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center hero-bloc-text tc-white">
+                            Parlons web design !
+                        </h1>
+                        <p class="text-center mg-lg tc-white tight-width-whitespace">
+                            Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+                        </p>
                     </div>
                 </div>
             </div>
-            <!-- bloc-6 END -->
+        </div>
+        <!-- bloc-6 END -->
 
-            <!-- bloc-7 -->
-            <div class="bloc bgc-white l-bloc" id="bloc-7">
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-6" role="group">
-                            <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-                                <div class="form-group">
-                                    <label for="name">Nom</label><br>
-                                    <input id="name" placeholder="Nom" class="form-control form-control-input" autocomplete="family-name" required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Adresse email</label><br>
-                                    <input id="email" placeholder="Adresse email" class="form-control form-control-input" type="email" autocomplete="email" required aria-required="true" aria-invalid="false" onblur="checkValidity('courriel', '@', 'L’adresse électronique saisie n’est pas valide');"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <label for="connu">Comment nous avez-vous connu ?</label><br>
-                                    <input class="form-control form-control-input" placeholder="Comment nous avez-vous connu ?" type="text" required id="connu">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Brief de votre projet</label>
-                                    <br>
-                                    <textarea id="message" placeholder="Brief de votre projet (Ajoutez autant de détails que nécessaire)" class="form-control" rows="4" cols="50" aria-label="submit" required></textarea>
-                                </div>
+        <!-- bloc-7 -->
+        <div class="bloc bgc-white l-bloc" id="bloc-7">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-6" role="group">
+                        <form id="form_1" data-validate="Your message has been sent." data-error="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                            <div class="form-group">
+                                <label for="name">Nom</label><br>
+                                <input id="name" placeholder="Nom" class="form-control form-control-input" autocomplete="family-name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse email</label><br>
+                                <input id="email" placeholder="exemple@email.com" class="form-control form-control-input" type="email" autocomplete="email" required aria-required="true" aria-invalid="false" onblur="checkValidity('courriel', '@', 'L’adresse électronique saisie n’est pas valide');"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="connu">Comment nous avez-vous connu ?</label><br>
+                                <select name="connu" id="connu" required>
+									<option value="réseaux sociaux">Réseaux sociaux</option>
+									<option value="moteur de recherche">Moteur de recherche</option>
+									<option value="réseaux sociaux">Presse, Brochures, Articles</option>
+									<option value="réseaux sociaux">Bouche à oreille</option>
+									<option value="réseaux sociaux">Autres</option>
+									
+								</select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Brief de votre projet</label>
+                                <br>
+                                <textarea id="message" placeholder="Brief de votre projet (Ajoutez autant de détails que nécessaire)" class="form-control" rows="4" cols="50" aria-label="submit" required></textarea>
+                            </div>
 
-                                <button class="bloc-button btn btn-lg cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
-                            </form>
-                        </div>
-                        <div class="col-sm-6">
-                            <p>
-                                contact@agencelapanthere.com<br><br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-                            </p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.9688602588955!2d4.8295749049433025!3d45.76950249652531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1655716711593!5m2!1sfr!2sfr"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            <button class="bloc-button btn btn-lg cta-hero btn-atomic-tangerine" type="submit" formnovalidate>Envoyer</button>
+
+                            <button type="reset"> Annuler </button>
+
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            contact@agencelapanthere.com<br><br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.9688602588955!2d4.8295749049433025!3d45.76950249652531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1655716711593!5m2!1sfr!2sfr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
-            <!-- bloc-7 END -->
+        </div>
+        <!-- bloc-7 END -->
 
-            <!-- ScrollToTop Button -->
-            <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-            <!-- ScrollToTop Button END-->
+        <!-- ScrollToTop Button -->
+        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+        <!-- ScrollToTop Button END-->
 
-        </main>
-        <footer>
-            <!-- Footer - bloc-8 -->
-            <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p class="text-center white">
-                                Agence La Panthère - Agence web basée à Lyon.<br>
-                            </p>
-                            <div class="row row-no-gutters social">
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-                                    </div>
+    </main>
+    <footer>
+        <!-- Footer - bloc-8 -->
+        <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+            <div class="container bloc-sm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center white">
+                            Agence La Panthère - Agence web basée à Lyon.<br>
+                        </p>
+                        <div class="row row-no-gutters social">
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer - bloc-8 END -->
+        </div>
 
-    </div>
-    <!-- Principal conteneur END -->
+        <!-- Footer - bloc-8 END -->
+
     </footer>
+
+    <!-- Principal conteneur END -->
 
 </body>
 
